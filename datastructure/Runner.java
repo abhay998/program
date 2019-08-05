@@ -1,7 +1,6 @@
-package datastructure;
+package com.bridgelabz.datastructure;
+	
 //import java.util.LinkedList;
-
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -14,6 +13,8 @@ import java.io.Writer;
 public class Runner{
 	
 	
+	private static final String[] Node = null;
+
 	public static void main(String args[])
 	{
 		try {
@@ -21,7 +22,7 @@ public class Runner{
 			Scanner sc=new Scanner(System.in);
 			LinkedList list=new LinkedList();
 				
-			FileReader fr=new FileReader("/home/user/Desktop/abhay.txt"); 
+			FileReader fr=new FileReader("/home/admin123/abhay/abhay"); 
 			
 			BufferedReader br=new BufferedReader(fr);   
 			
@@ -56,8 +57,9 @@ public class Runner{
 		    			int pos=list.index(searchString);
 		    			String removedItem=list.pop( pos);
 		    			System.out.println("Item "+removedItem+" is removed from List\nList After Removed item");
+		    			//list.sortList();
 		    			list.show();
-		    			FileWriter wr= new FileWriter("/home/user/Desktop/abhay.txt",false);
+		    			FileWriter wr= new FileWriter("/home/admin123/abhay/abhay");
 		    			Node temp=list.head;
 		    			while(temp!=null)
 		    			{
@@ -74,8 +76,8 @@ public class Runner{
 		    		{
 		    			System.out.println(searchString+" is NOT found in List");
 		    			list.append(searchString);
-		    			
-		    			FileWriter wr= new FileWriter("/home/user/Desktop/sangita.txt",false);
+		    			//list.sortList();
+		    			FileWriter wr= new FileWriter("/home/admin123/abhay/abhay");
 		    			Node temp=list.head;
 		    			while(temp!=null)
 		    			{
@@ -89,7 +91,9 @@ public class Runner{
 		    		}
 		    	}
 		    }while(searchString.compareTo("0")!=0);
-		    list.insert(1, "abx");
+			
+		    //list.insert(1, "abx");
+		    
 		    list.show();
 		}
 	    	catch(IOException e)
@@ -98,4 +102,3 @@ public class Runner{
 			}
 	}
 }
-	

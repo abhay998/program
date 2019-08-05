@@ -1,9 +1,12 @@
-package datastructure;
-
+package com.bridgelabz.datastructure;
 
 public class Node {
-	public String data;
-	 public Node next;
+	
+		public String data;
+		 public Node next;
 
 
-}
+	}
+
+
+sss
